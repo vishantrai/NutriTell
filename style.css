@@ -1,0 +1,246 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  height: 300px;
+  background: url('cover.png.png') no-repeat center center; 
+  background-size: cover; /* Ensures the image covers the header */
+  color: rgb(18, 89, 20);
+  font-family: Arial, sans-serif;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+/* Container for navigation */
+.nav-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+}
+
+/* Navigation list styling */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+/* Individual navigation items */
+.nav-item {
+  text-decoration: none;
+  font-size: 16px;
+  color: #1d5116;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover effect for links */
+.nav-item:hover {
+  opacity: 0.7;
+}
+
+/* Content in the center of the header */
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+/* Optional: Styling for the text in the center */
+.header-content h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+.header-content p {
+  font-size: 18px;
+}
+
+/* Dish List Section */
+#dish-list-section {
+  font-family: Arial, sans-serif;
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+#dish-list-section ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.dish-item {
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 250px;
+  height: 350px;  /* Fixed height for uniform box size */
+  transition: transform 0.3s ease-in-out;
+  background-color: #fff;  /* Ensures background is consistent */
+}
+
+.dish-item:hover {
+  transform: scale(1.05);  /* Slightly enlarges the dish box on hover */
+}
+
+.dish-content {
+  border: 2px solid #ddd;  /* Light border for the box */
+  padding: 10px;
+  border-radius: 8px;  /* Rounded corners */
+  text-align: center;
+  height: 100%;  /* Ensures content box fills the entire height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  /* Space between image and description */
+}
+
+.dish-item img {
+  width: 100%;
+  height: 200px;  /* Fixed height for images */
+  object-fit: cover;  /* Ensures images fill the space without distortion */
+  border-radius: 8px;  /* Rounded corners for the image */
+  margin-bottom: 10px;
+}
+
+.dish-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.dish-item p {
+  font-size: 0.95em;
+  color: #555;
+  margin: 0;
+  height: 100%;  /* Ensure description takes the remaining height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Track Your Nutrition Section */
+.nutrition-section {
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.nutrition-heading {
+  font-size: 24px;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.nutrition-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-group label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.form-group input {
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.submit-button {
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.submit-button:focus {
+  outline: none;
+}
+
+/* Result Section Styling */
+.result-section {
+  margin-top: 50px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.result-heading {
+  font-size: 24px;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.result-output {
+  font-size: 18px;
+  color: #555;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Additional Adjustments */
+@media (max-width: 768px) {
+  .nav-list {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .dish-item {
+      width: 100%;
+      max-width: 300px;
+  }
+}

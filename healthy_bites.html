@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutritell Blog</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a.active {
+            border-bottom: 2px solid #fff;
+        }
+
+        /* Main Content Styles */
+        main {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .blog-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .blog-header h1 {
+            font-size: 36px;
+        }
+
+        .blog-posts {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .blog-post {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-post h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .blog-post a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .blog-post .date {
+            font-size: 14px;
+            color: #888;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Blog Main Section -->
+    <main>
+        <section class="blog-header">
+            <h1>Welcome to the Nutritell Blog</h1>
+            <p>Explore articles on healthy living, nutrition, and wellness.</p>
+        </section>
+
+        <!-- Blog Post List -->
+        <section class="blog-posts">
+            <article class="blog-post">
+                <h2><a href="https://www.healthline.com/health/balanced-diet#importance">The Importance of a Balanced Diet</a></h2>
+                <p class="date">November 28, 2024</p>
+                <p>Eating a balanced diet is key to maintaining good health. Learn how to balance your macronutrients and micronutrients for optimal wellness.</p>
+                <a href="https://www.healthline.com/health/balanced-diet#importance" class="read-more">Read More</a>
+            </article>
+
+            <article class="blog-post">
+                <h2><a href="https://www.healthline.com/health/food-nutrition/foods-that-boost-the-immune-system">15 Superfoods for Boosting Immunity</a></h2>
+                <p class="date">November 22, 2024</p>
+                <p>Superfoods can play a crucial role in enhancing your immune system. Discover the top 15 superfoods that should be part of your diet.</p>
+                <a href="https://www.healthline.com/health/food-nutrition/foods-that-boost-the-immune-system" class="read-more">Read More</a>
+            </article>
+
+            <article class="blog-post">
+                <h2><a href="https://www.healthline.com/nutrition/healthy-grocery-shopping-guide">The Definitive Guide to Healthy Grocery Shopping</a></h2>
+                <p class="date">November 15, 2024</p>
+                <p>As a dietitian, I am well aware that grocery shopping can be an intimidating and overwhelming experience for many people.</p>
+                <a href="https://www.healthline.com/nutrition/healthy-grocery-shopping-guide" class="read-more">Read More</a>
+            </article>
+            <article class="blog-post">
+                <h2><a href="https://www.bhf.org.uk/informationsupport/heart-matters-magazine/nutrition/ask-the-expert/macronutrients#:~:text=Macronutrients%20are%20the%20nutrients%20we,our%20micronutrients%20along%20with%20macronutrients.">Understanding Macronutrients and Their Role</a></h2>
+                <p class="date">November 10, 2024</p>
+                <p>Macronutrients are the nutrients that provide us with energy. Here's a detailed guide to understanding proteins, fats, and carbohydrates.</p>
+                <a href="https://www.bhf.org.uk/informationsupport/heart-matters-magazine/nutrition/ask-the-expert/macronutrients#:~:text=Macronutrients%20are%20the%20nutrients%20we,our%20micronutrients%20along%20with%20macronutrients." class="read-more">Read More</a>
+            </article>
+            <article class="blog-post">
+                <h2><a href="https://www.healthline.com/nutrition/9-benefits-oats-oatmeal">9 Health Benefits of Eating Oats and Oatmeal</a></h2>
+                <p class="date">November 5, 2024</p>
+                <p>Studies show that oats and oatmeal have many health benefits. These include weight loss, lower blood sugar levels, and a reduced risk of heart disease.</p>
+                <a href="https://www.healthline.com/nutrition/9-benefits-oats-oatmeal" class="read-more">Read More</a>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Nutritell | All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

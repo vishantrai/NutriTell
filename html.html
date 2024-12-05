@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutritell - Personalized Nutrition Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="nav-container">
+        <nav>
+            <ul class="nav-list">
+                <li><a href="login.html" class="nav-item">Login</a></li>
+                <li><a href="about_us.html" class="nav-item">About Us</a></li>
+                <li><a href="healthy_bites.html" class="nav-item">Healthy Bites</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+  <main>
+    <section class="nutrition-section">
+      <h2 class="nutrition-heading">Track Your Nutrition</h2>
+      <form id="nutritionForm" class="nutrition-form">
+        <div class="form-group">
+          <label for="food">Enter Food Name:</label>
+          <input type="text" id="food" name="food" placeholder="e.g., Rice, Banana" required>
+        </div>
+        <div class="form-group">
+          <label for="amount">Enter Amount (grams):</label>
+          <input type="number" id="amount" name="amount" placeholder="e.g., 100" required>
+        </div>
+        <button type="submit" class="submit-button">Get Nutritional Info</button>
+      </form>
+    </section>
+    
+    <section id="result" class="result-section">
+      <h2 class="result-heading">Nutritional Information</h2>
+      <div id="output" class="result-output"></div>
+    </section>
+    
+    <section id="dish-list-section">
+      <div>
+        <h1>Indian Dishes in our Database</h1>
+        <ul>
+          <li class="dish-item">
+            <div class="dish-content">
+              <img src="chhole-bhature.jpg" alt="Chhole Bhature" width="100" height="100">
+              <strong class="dish-name">Chhole Bhature</strong>
+              <p>A popular North Indian dish consisting of spicy chickpeas (chhole) served with fried bread (bhature). It's a hearty and flavorful meal often enjoyed with a side of yogurt or pickle.</p>
+            </div>
+          </li>
+          <li class="dish-item">
+            <div class="dish-content">
+              <img src="aaloo-paratha.jpg" alt="Aaloo Paratha" width="100" height="100">
+              <strong class="dish-name">Aaloo Paratha</strong>
+              <p>A stuffed flatbread made with whole wheat flour and mashed potatoes (aaloo). It's a comforting meal, usually served with yogurt, pickles, or curry.</p>
+            </div>
+          </li>
+          <li class="dish-item">
+            <div class="dish-content">
+              <img src="chicken-curry.jpg" alt="Chicken Curry" width="100" height="100">
+              <strong class="dish-name">Chicken Curry</strong>
+              <p>A rich, flavorful curry made with chicken simmered in a blend of spices and tomatoes. It's typically served with rice or bread like naan or roti.</p>
+            </div>
+          </li>
+          <li class="dish-item">
+            <div class="dish-content">
+              <img src="biryani.jpg" alt="Biryani" width="100" height="100">
+              <strong class="dish-name">Biryani</strong>
+              <p>A fragrant rice dish made with spiced meat (usually chicken or mutton) and saffron, often garnished with fried onions and boiled eggs. It's a popular dish across India.</p>
+            </div>
+          </li>
+          <li class="dish-item">
+            <div class="dish-content">
+              <img src="puri-sabji.jpg" alt="Puri Sabji" width="100" height="100">
+              <strong class="dish-name">Puri Sabji</strong>
+              <p>Deep-fried puris (flatbread) served with a flavorful vegetable curry, typically potatoes. It's a common breakfast or lunch dish, especially in northern India.</p>
+            </div>
+          </li>
+          <li class="dish-item">
+            <div class="dish-content">
+              <img src="dosa.jpg" alt="Dosa" width="100" height="100">
+              <strong class="dish-name">Dosa</strong>
+              <p>A thin, crispy pancake made from fermented rice and lentil batter. Dosas are typically served with chutneys and sambar, making for a delicious and nutritious meal.</p>
+            </div>
+          </li>
+          <li class="dish-item">
+            <div class="dish-content">
+              <img src="idli.jpg" alt="Idli" width="100" height="100">
+              <strong class="dish-name">Idli</strong>
+              <p>Soft and fluffy steamed rice cakes made from fermented rice and urad dal batter. Idlis are usually served with sambar and coconut chutney for breakfast or dinner.</p>
+            </div>
+          </li>
+          <li class="dish-item">
+            <div class="dish-content">
+              <img src="paneer-butter-masala.jpg" alt="Paneer Butter Masala" width="100" height="100">
+              <strong class="dish-name">Paneer Butter Masala</strong>
+              <p>A creamy and flavorful curry made with cubes of paneer (Indian cottage cheese) cooked in a spiced tomato gravy with butter and cream. It's a popular vegetarian dish.</p>
+            </div>
+          </li>
+          <li class="dish-item">
+            <div class="dish-content">
+              <img src="rajma-chawal.jpg" alt="Rajma Chawal" width="100" height="100">
+              <strong class="dish-name">Rajma Chawal</strong>
+              <p>A comforting North Indian dish consisting of kidney beans cooked in a spicy gravy, served with steamed rice. It's a staple meal in many households across India.</p>
+            </div>
+          </li>
+          <li class="dish-item">
+            <div class="dish-content">
+              <img src="dal-tadka.jpg" alt="Dal Tadka" width="100" height="100">
+              <strong class="dish-name">Dal Tadka</strong>
+              <p>A classic lentil dish where cooked yellow dal is tempered with ghee, cumin, garlic, and other spices. It’s a flavorful and nutritious dish served with roti or rice.</p>
+            </div>
+          </li>
+          <li class="dish-item">
+            <div class="dish-content">
+              <img src="samosa.jpg" alt="Samosa" width="100" height="100">
+              <strong class="dish-name">Samosa</strong>
+              <p>A crispy, deep-fried pastry filled with spiced potatoes, peas, and sometimes meat. Samosas are a popular snack and appetizer in India, often served with chutney.</p>
+            </div>
+          </li>
+          <li class="dish-item">
+            <div class="dish-content">
+              <img src="pav-bhaji.jpg" alt="Pav Bhaji" width="100" height="100">
+              <strong class="dish-name">Pav Bhaji</strong>
+              <p>A Mumbai street food dish consisting of spicy mashed vegetables (bhaji) served with buttered pav (bread rolls). It's a quick and satisfying meal, perfect for any time of day.</p>
+            </div>
+          </li>
+          <li class="dish-item">
+            <div class="dish-content">
+              <img src="masala-dosa.jpg" alt="Masala Dosa" width="100" height="100">
+              <strong class="dish-name">Masala Dosa</strong>
+              <p>A South Indian delicacy, masala dosa is a crispy rice pancake filled with spiced mashed potatoes. It’s served with chutneys and sambar for a delicious breakfast or dinner.</p>
+            </div>
+          </li>
+          <li class="dish-item">
+            <div class="dish-content">
+              <img src="roti-sabji.jpg" alt="Roti Sabji" width="100" height="100">
+              <strong class="dish-name">Roti Sabji</strong>
+              <p>A simple yet comforting meal consisting of soft wheat rotis (flatbreads) served with a vegetable curry (sabji). It’s a staple meal across India.</p>
+            </div>
+          </li>
+          <li class="dish-item">
+            <div class="dish-content">
+              <img src="fish-curry.jpg" alt="Fish Curry" width="100" height="100">
+              <strong class="dish-name">Fish Curry</strong>
+              <p>A tangy and spicy curry made with fish simmered in a spiced gravy. It’s a popular dish in coastal regions of India, often served with rice or flatbread.</p>
+            </div>
+          </li>
+          <li class="dish-item">
+            <div class="dish-content">
+              <img src="keema-naan.jpg" alt="Keema Naan" width="100" height="100">
+              <strong class="dish-name">Keema Naan</strong>
+              <p>A stuffed naan (Indian flatbread) filled with spiced minced meat (keema). It's a popular dish in North India and pairs wonderfully with curries and yogurt.</p>
+            </div>
+          </li>
+          <li class="dish-item">
+            <div class="dish-content">
+              <img src="palak-paneer.jpg" alt="Palak Paneer" width="100" height="100">
+              <strong class="dish-name">Palak Paneer</strong>
+              <p>A creamy curry made with spinach (palak) and paneer (Indian cottage cheese). It’s a rich and healthy dish that’s often served with roti or rice.</p>
+            </div>
+          </li>
+          <li class="dish-item">
+            <div class="dish-content">
+              <img src="veg-pulao.jpg" alt="Veg Pulao" width="100" height="100">
+              <strong class="dish-name">Veg Pulao</strong>
+              <p>A fragrant rice dish made with mixed vegetables, spices, and herbs. It’s often served as a side dish or light meal, perfect with raita or curry.</p>
+            </div>
+          </li>
+          <li class="dish-item">
+            <div class="dish-content">
+              <img src="kheer.jpg" alt="Kheer" width="100" height="100">
+              <strong class="dish-name">Kheer</strong>
+              <p>A traditional Indian dessert made from rice, milk, sugar, and cardamom. It’s often garnished with nuts and saffron, offering a creamy and rich flavor.</p>
+            </div>
+          </li>
+          <li class="dish-item">
+            <div class="dish-content">
+              <img src="gajar-halwa.jpg" alt="Gajar Halwa" width="100" height="100">
+              <strong class="dish-name">Gajar Halwa</strong>
+              <p>A sweet dessert made with grated carrots, milk, sugar, and ghee. Gajar halwa is a popular winter dessert across India, offering a deliciously rich taste.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    
+  </main>
+  <footer>
+    <p>© 2024 Nutritell | Powered by USDA FoodData Central</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
