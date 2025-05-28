@@ -6,8 +6,16 @@ from codes.Backend import models, schemas, utils
 from codes.Backend.database import SessionLocal, engine
 from codes.Backend.schemas import UserCreate
 # from passlib.context import CryptContext # library for password hashing
-
 # pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+
+from fastapi.templating import Jinja2Templates
+from fastapi.staticfiles import StaticFiles
+
+# This tells FastAPI to look inside the 'templates' folder for HTML files
+templates = Jinja2Templates(directory="Backend")
+
+# This allows you to serve CSS/JS files if needed
+# app.mount("/static", StaticFiles(directory="static"), name="static")
 
 app = FastAPI()
 
@@ -46,7 +54,7 @@ def get_db():
 #     return {"data": new_user}
 
 
-@app.post("/users", status_code=status.HTTP_201_CREATED, response_model=schemas.UserOut) #status is imported from fastapi
+@app.post("/users", status_code=status.HTTP_201_CREATED, response_class=HTMLResponse, response_model=schemas.UserOut) #status is imported from fastapi
 def create_user(user: UserCreate, db: Session = Depends(get_db)):
 
     # hashing the password in the database
