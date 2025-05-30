@@ -17,7 +17,10 @@ class UserCreate(BaseModel):
 # response model
 class UserOut(BaseModel):
     
+    id: int
+    fullname: str
     username: str
-    created_at: datetime
+    email: str
+    created_st: datetime
     class Config:
         from_attributes = True
